@@ -530,7 +530,7 @@ gpio!(GPIOB, gpiob, gpioa, iopben, iopbrst, PBx, [
     PB15: (pb15, 15, Input<Floating>, CRH),
 ]);
 
-#[cfg(not(feature = "stm32f100"))]
+#[cfg(feature = "stm32f103")]
 gpio!(GPIOC, gpioc, gpioa, iopcen, iopcrst, PCx, [
     PC13: (pc13, 13, Input<Floating>, CRH),
     PC14: (pc14, 14, Input<Floating>, CRH),
